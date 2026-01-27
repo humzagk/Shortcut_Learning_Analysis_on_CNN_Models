@@ -7,7 +7,7 @@
 ![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green)
 
 ##  Overview
-State-of-the-art CNNs often achieve superhuman accuracy on benchmarks like ImageNet, yet they can fail catastrophically in real-world scenarios. This project investigates **"Shortcut Learning,"** revealing that standard models (like ResNet) function as **texture-matchers** rather than shape-recognizers.
+State of the art CNNs often achieve superhuman accuracy on benchmarks like ImageNet, yet they can fail catastrophically in real-world scenarios. This project investigates **"Shortcut Learning,"** revealing that standard models (like ResNet) function as **texture-matchers** rather than shape recognizers.
 
 Using the **Imagenette** dataset, this project quantifies the "Degradation Gap" that occurs when visual shortcuts (color, texture, background) are removed from an image.
 
@@ -15,7 +15,7 @@ Using the **Imagenette** dataset, this project quantifies the "Degradation Gap" 
 We compared **ResNet-18** vs. **ResNet-101** across three distinct data modalities:
 1.  **Original (RGB):** Standard baseline.
 2.  **Edges (Shape-Only):** Texture removed using Canny Edge Detection.
-3.  **Segmentation (Object-Only):** Background removed using DeepLabV3.
+3.  **Segmentation (Object Only):** Background removed using DeepLabV3.
 
 ## Key Results
 Our experiments revealed a massive reliance on texture. When texture was removed, the model's "intelligence" collapsed, proving it was relying on superficial statistics.
